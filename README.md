@@ -24,10 +24,6 @@ Test on kitti_odom_benchmark 05:
 
 ![](https://github.com/ZJUYH/laserScan_Similarity/raw/master/image/kitti_05.png)
 
-The ground truth poses in SM-Matrix:
-
-![](https://github.com/ZJUYH/laserScan_Similarity/raw/master/image/smtrue.jpg)
-
 PR-Curve of EMD & Cos:
 
 ![](https://github.com/ZJUYH/laserScan_Similarity/raw/master/image/PRCurve05.jpg)
