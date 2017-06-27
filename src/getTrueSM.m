@@ -6,6 +6,7 @@ function SM = getTrueSM( testPose, disThreshold)
     SM = zeros(len, len);
 
     for i = 1 : 1 : len
+        i
         for j = 1 : 1 : i
             if i == j
                 SM(i, j) = 0;

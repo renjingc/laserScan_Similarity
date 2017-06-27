@@ -1,4 +1,4 @@
-function [ trueIndex, falseIndex ] = getTFIndex( SM, unloopSelect )
+function [ trueIndex, falseIndex ] = getTrainIndex( SM, unloopSelect )
 %GETTFINDEX Summary of this function goes here
 %   Detailed explanation goes here
     

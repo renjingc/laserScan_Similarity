@@ -1,4 +1,4 @@
-function test = getXYZ( input )
+function test = getPoseCells( input )
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
     test = cell(1, length(input));

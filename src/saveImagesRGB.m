@@ -3,7 +3,7 @@ function [  ] = saveImagesRGB( set, imagesRange, imagesIntensity )
 %   Detailed explanation goes here
     
     len = length(imagesRange);
-    RGB = zeros(64, 80, 2);
+    RGB = zeros(64, 80, 3);
     dir = '/home/yh/kitti_test/images/';
     
     for i = 1 : 1 : len

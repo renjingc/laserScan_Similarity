@@ -24,8 +24,8 @@ function [  ] = saveImagesName( set, trueIndex, falseIndex )
     end
     
     for j = 1 : 1 : lenFalse
-        name1 = sprintf('%04d', falseIndex(i, 1));
-        name2 = sprintf('%04d', falseIndex(i, 2));
+        name1 = sprintf('%04d', falseIndex(j, 1));
+        name2 = sprintf('%04d', falseIndex(j, 2));
         imageName1 = [setName, name1, '.jpg   ']; 
         imageName2 = [setName, name2, '.jpg']; 
         fprintf(fidFalse, '%s', imageName1);
