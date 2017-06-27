@@ -1,6 +1,15 @@
-## A simple and stupid method for loop closure detection in 3D LIDAR data:
+## A simple method for loop closure detection in 3D LIDAR data:
 
-Rohling T, Mack J, Schulz D. A fast histogram-based similarity measure for detecting loop closures in 3-D LIDAR data[C]// Ieee/rsj International Conference on Intelligent Robots and Systems. IEEE, 2015:736-741.
+```
+@inproceedings{rohling2015fast,
+  title={A fast histogram-based similarity measure for detecting loop closures in 3-D LIDAR data},
+  author={R{\"o}hling, Timo and Mack, Jennifer and Schulz, Dirk},
+  booktitle={Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ International Conference on},
+  pages={736--741},
+  year={2015},
+  organization={IEEE}
+}
+```
 
 ## Images
 
