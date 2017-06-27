@@ -36,6 +36,10 @@ ROC-Curve of EMD & Cos:
 
 ![](https://github.com/ZJUYH/laserScan_Similarity/raw/master/image/ROCCurve05.jpg)
 
+Using Siamese Network to get the similarity between two images(Range Only):
+
+![](https://github.com/ZJUYH/laserScan_Similarity/raw/master/image/test_0627_comp.jpg)
+
 ## Thanks:
 
 Ethz_asl for libpointmatcher
