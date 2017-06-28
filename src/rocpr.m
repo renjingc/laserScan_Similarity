@@ -82,6 +82,7 @@ for i=1:numClasses
   [tpr{i},fpr{i},precision{i},thresholds{i}] = roc_one(targets(i,:),outputs(i,:));
 end
 
+
 %%
 function [tpr,fpr,precision,thresholds] = roc_one(targets,outputs)
 

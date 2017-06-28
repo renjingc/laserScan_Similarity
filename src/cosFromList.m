@@ -2,7 +2,7 @@ function [ CosList ] = cosFromList( list, imageCells )
 %COSFROMLIST Summary of this function goes here
 %   Detailed explanation goes here
     len = length(list);
-    CosList = zeros(len);
+    CosList = zeros(len,1);
     sections = 80;
     
     for i = 1 : 1 : len

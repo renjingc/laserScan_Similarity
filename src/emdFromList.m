@@ -2,7 +2,7 @@ function [ EMDList ] = emdFromList( list, imageCells )
 %EMDFROMLIST Summary of this function goes here
 %   Detailed explanation goes here
     len = length(list);
-    EMDList = zeros(len);
+    EMDList = zeros(len,1);
     sections = 80;
     
     for i = 1 : 1 : len
