@@ -1,4 +1,4 @@
-[X_loss,Y_loss,T_loss,AUC_loss] = perfcurve(gnd_inverse, loss_new_2000, '0');
+[X_loss,Y_loss,T_loss,AUC_loss] = perfcurve(gnd_inverse, loss_0702_gpu0, '0');
 plot(X_loss,Y_loss,'LineWidth', 2);
 AUC_loss
 hold on;
