@@ -5,10 +5,9 @@ function SM = cosSM( images )
     frames = length(images);
     SM = zeros(frames, frames);
     
-    
+    tic
     for i = 1 : 1 : frames
        i
-       tic
        for j = 1 : 1 : i
           
 %            if j == i
@@ -30,9 +29,9 @@ function SM = cosSM( images )
            SM(i, j) = cosSimity;
            
        end   
-       toc
+       
     end
-    
+    toc
 
 
 end

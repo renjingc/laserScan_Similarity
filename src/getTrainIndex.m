@@ -1,18 +1,27 @@
-function [ trueIndex, falseIndex ] = getTrainIndex( SM, unloopSelect )
+function [ trueIndex, falseIndex ] = getTrainIndex( SM, loopSelect, unloopSelect )
 %GETTFINDEX Summary of this function goes here
 %   Detailed explanation goes here
     
     len = length(SM);
+    
     unloop = 0;
-    loopCount = 0;
     unloopCount = 0;
+    
+    loop = 0;
+    loopCount = 0;
 
     for i = 1 : 1 : len
+        i
         for j = 1 : 1 : i-1
            
             if SM(i, j) == 0  %loop
-                loopCount = loopCount + 1;
-                trueIndex(loopCount, :) = [i, j];
+                loop = loop + 1;
+            end
+            
+            if mod(loop, loopSelect) == 0
+               loop = 0;
+               loopCount = loopCount + 1;
+               trueIndex(loopCount, :) = [i, j];
             end
             
             if SM(i, j) == 1

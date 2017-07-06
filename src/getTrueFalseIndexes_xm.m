@@ -1,10 +1,10 @@
 % 00
-% [trueIndex00_1m, falseIndex00_1m] = getTrainIndex(SMTrue00_1m, 2000);
-% [trueIndex00_2m, falseIndex00_2m] = getTrainIndex(SMTrue00_2m, 1000);
-% [trueIndex00_3m, falseIndex00_3m] = getTrainIndex(SMTrue00_3m, 700);
-% [trueIndex00_5m, falseIndex00_5m] = getTrainIndex(SMTrue00_5m, 400);
-% [trueIndex00_8m, falseIndex00_8m] = getTrainIndex(SMTrue00_8m, 250);
-% [trueIndex00_10m, falseIndex00_10m] = getTrainIndex(SMTrue00_10m, 180);
+[trueIndex00_1m, falseIndex00_1m] = getTrainIndex(SMTrue00_1m, 200, 2000);
+% [trueIndex00_2m, falseIndex00_2m] = getTrainIndex(SMTrue00_2m, 1, 1000);
+% [trueIndex00_3m, falseIndex00_3m] = getTrainIndex(SMTrue00_3m, 1, 700);
+% [trueIndex00_5m, falseIndex00_5m] = getTrainIndex(SMTrue00_5m, 1, 400);
+% [trueIndex00_8m, falseIndex00_8m] = getTrainIndex(SMTrue00_8m, 1, 250);
+% [trueIndex00_10m, falseIndex00_10m] = getTrainIndex(SMTrue00_10m, 1, 180);
 
 % 02
 % [trueIndex02_1m, falseIndex02_1m] = getTrainIndex(SMTrue02_1m, 15000);
