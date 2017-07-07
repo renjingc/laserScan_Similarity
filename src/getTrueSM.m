@@ -19,7 +19,7 @@ function SM = getTrueSM( testPose, disThreshold)
             
             dis = norm(xyI - xyJ);
             
-            if dis < disThreshold && (i - j) > 100  % car-parking filtered
+            if dis < disThreshold %&& (i - j) > 100  % car-parking filtered
                 SM(i, j) = 0;
                 SM(j, i) = 0;
             else
@@ -29,7 +29,7 @@ function SM = getTrueSM( testPose, disThreshold)
         end
     end
         
-
+    imshow(SM);
 
 end
 

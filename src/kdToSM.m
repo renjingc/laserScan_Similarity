@@ -35,6 +35,7 @@ function [ SM01 ] = kdToSM( featVector, threshold )
     toc
     
     imshow(SM01);
+    
         
 end
 

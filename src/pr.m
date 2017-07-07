@@ -20,9 +20,11 @@ for i = 1:length(prec)-1
     prec(i) = max(prec(i+1:end));
 end
 
+% f1 score
 f1score = 0;
+beta_2  = 100;
 for i = 1:length(prec)
-    score = (2 * prec(i) * reca(i)) / (prec(i) + reca(i));
+    score = ((1 + beta_2)* prec(i) * reca(i)) / (beta_2*prec(i) + reca(i));
     if score > f1score
        f1score = score; 
        threshold = -loss_sorted(i);
