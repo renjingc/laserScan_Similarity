@@ -5,6 +5,7 @@ function [ EMDList ] = emdFromList( list, imageCells )
     EMDList = zeros(len,1);
     sections = 80;
     
+    tic
     for i = 1 : 1 : len
         i
         
@@ -37,6 +38,7 @@ function [ EMDList ] = emdFromList( list, imageCells )
        EMDList(i) = EMDSimity;
         
     end
+    toc
 
 end
 

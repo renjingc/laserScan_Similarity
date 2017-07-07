@@ -5,6 +5,7 @@ function [ CosList ] = cosFromList( list, imageCells )
     CosList = zeros(len,1);
     sections = 80;
     
+    tic
     for i = 1 : 1 : len
         i
         
@@ -26,6 +27,7 @@ function [ CosList ] = cosFromList( list, imageCells )
        CosList(i) = cosSimity;
         
     end
+    toc
 
 end
 
