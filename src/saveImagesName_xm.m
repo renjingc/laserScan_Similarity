@@ -10,7 +10,7 @@
 % saveImagesName(8, trueIndex08_1m, falseIndex08_1m);
 
 % 2m
-% saveImagesName(0, trueIndex00_2m, falseIndex00_2m);
+% saveImagesName(0, trueIndex00_2m, falseIndex00_2m); 
 % saveImagesName(2, trueIndex02_2m, falseIndex02_2m);
 % saveImagesName(5, trueIndex05_2m, falseIndex05_2m);
 % saveImagesName(6, trueIndex06_2m, falseIndex06_2m);

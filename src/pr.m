@@ -1,4 +1,4 @@
-function [ reca, prec ] = pr( gnd_inverse, loss )
+function [ reca, prec, f1score, threshold] = pr( gnd_inverse, loss )
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
     
@@ -7,6 +7,7 @@ loss = -loss;
 loss_sorted = sort(loss,'descend');
 pnom = [];
 pdenom = [];
+
 for i = 1:length(loss_sorted)
     pred = loss>=loss_sorted(i);
     pnom = [pnom sum(gndtr & pred)];
@@ -17,6 +18,15 @@ reca = pnom./sum(gndtr);
 
 for i = 1:length(prec)-1
     prec(i) = max(prec(i+1:end));
+end
+
+f1score = 0;
+for i = 1:length(prec)
+    score = (2 * prec(i) * reca(i)) / (prec(i) + reca(i));
+    if score > f1score
+       f1score = score; 
+       threshold = -loss_sorted(i);
+    end
 end
 
 end

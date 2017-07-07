@@ -2,7 +2,7 @@ function [  ] = saveImagesName( set, trueIndex, falseIndex )
 %SAVEIMAGESNAME Summary of this function goes here
 %   Detailed explanation goes here
     
-    dir = '/home/yh/kitti_test/0705/2m/';
+    dir = '/home/yh/kitti_test/0705/';
     setName = num2str(set);
     
     fileNameTrue = [dir, setName, 'True.txt'];
