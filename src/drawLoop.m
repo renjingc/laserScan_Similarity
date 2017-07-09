@@ -1,8 +1,13 @@
-function drawLoop( index, pose )
+function drawLoop( SM, pose )
 %DRAWLOOP Summary of this function goes here
 %   Detailed explanation goes here    
     hold on
+    
+    [i1,i2] = find(SM == 0);
+    index = [i1, i2];
+    
     for i = 1:size(index,1)
+        i
         if index(i,1)-index(i,2) < 10
             continue
         end

@@ -84,7 +84,7 @@ public:
 //    void getRawScan(const sensor_msgs::PointCloud2& cloudMsgIn);
     DP filterByRange(DP* rawScan);
 
-    DP readFromDir(string fileName);
+    DP readFromDir(int count, string fileName);
 
     int getRingOfPoint(Eigen::Vector3f inputXYZ);
 
@@ -195,7 +195,7 @@ Similarity::Similarity(ros::NodeHandle& n):
             cout<<"fileName:  "<<fileName<<endl;
 
             //process ring by ring
-            DP rawScan = this->readFromDir(fileName);
+            DP rawScan = this->readFromDir(i, fileName);
             int ringRow = rawScan.getDescriptorStartingRow("ring");
 
             for(int j = this->upStart; j < this->ringsCount; j++)
@@ -324,7 +324,7 @@ Similarity::DP Similarity::filterByRange(DP *rawScan)
 }
 
 //For kitti dataset
-Similarity::DP Similarity::readFromDir(string fileName)
+Similarity::DP Similarity::readFromDir(int count, string fileName)
 {
     DP tempScan;
 
@@ -393,6 +393,15 @@ Similarity::DP Similarity::readFromDir(string fileName)
     {
         free(data);
     }
+
+    stringstream countss;
+    countss << count;
+    string counts = countss.str();
+
+    string s1 = "/media/yh/YH/DataSet/kitti_benchmark_velodyne/dataset/vtk/06/";
+    string s3 = ".vtk";
+    string file = s1 + counts + s3;
+    tempScan.save(file);
 
     return tempScan;
 }
@@ -552,7 +561,7 @@ void Similarity::getEMDRings()
     */
 
     //save the origin Bins data to draw the Similarity Matrix
-    if(1)
+    if(0)
     {
         ///record the range bins
         ofstream recordBinRange;

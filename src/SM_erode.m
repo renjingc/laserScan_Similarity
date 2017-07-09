@@ -28,6 +28,14 @@
 % SMTest = kdToSM(feat_08_1m, 1.700);
 % SMTest = SMTrue08_1m;
 
+%SM
+% SMTest = kdToSM(feat_08_2m, 1.8);
+% SMTest = SMTrue08_2m;
+
+% SM 08 new
+SMTest = kdToSM(feat_08_new, 2.0);
+
+
 %erode
 se = strel('disk',8);
 SMTest_im = imerode(SMTest, se);
