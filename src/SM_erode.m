@@ -1,7 +1,7 @@
 %SM 
 % SMTest = SM01lization(sm00emd, 0.1314,1);
 % SMTest = SM01lization(sm00cos, 0.9736,0);
-%SMTest = kdToSM(feat_00, 1.200);
+% SMTest = kdToSM(feat_00, 1.250);
 % SMTest = SMTrue00_3m;
 
 %SM 
@@ -33,13 +33,15 @@
 % SMTest = SMTrue08_2m;
 
 % SM 08 new
-SMTest = kdToSM(feat_08_new, 2.0);
+% SMTest = kdToSM(feat_08_new, 2.0);
 
 
 %erode
+colormap gray;
 se = strel('disk',8);
 SMTest_im = imerode(SMTest, se);
-imshow(SMTest_im,'InitialMagnification','fit');
+image(SMTest_im,'CDataMapping','scaled');
+% imshow(SMTest_im,'InitialMagnification','fit');
 % xlabel('SM');
 
 % threshold records of loss/kd-ec
